@@ -36,9 +36,10 @@ export function OstrichFigure({ id, pose = "tablet", look = "plain" }: Omit<Prop
 
       {pose === "scanner" ? (
         <>
-          <NeckFluff id={id} />
-          <Neck id={id} d="M 283 282 C 300 236, 302 204, 330 180 L 352 172" />
           <Ostriscan id={id} />
+          <NeckFluff id={id} />
+          <Neck id={id} d="M 283 282 C 300 236, 268 196, 296 176 C 304 171, 310 172, 318 172" />
+          <PortFront id={id} />
         </>
       ) : pose === "microscope" ? (
         <>
@@ -109,6 +110,24 @@ function Microscope() {
   );
 }
 
+/** Drawn after the neck so the neck appears to pass into the port. */
+function PortFront({ id }: { id: string }) {
+  return (
+    <g>
+      <rect x="304" y="144" width="40" height="56" rx="6" fill={`url(#${id}-collar)`} stroke="#4a4d55" strokeWidth="1" />
+      <rect x="312" y="150" width="4" height="44" rx="2" fill="#7dd3f0" opacity="0.5" />
+      {/* inner shadow where the neck enters */}
+      <path d="M 306 144 a 13 28 0 0 0 0 56 Z" fill="#000" opacity="0.35" />
+      {/* gasket ring */}
+      <ellipse cx="306" cy="172" rx="13" ry="28" fill="none" stroke="#5a5d66" strokeWidth="4" />
+      <ellipse cx="306" cy="172" rx="13" ry="28" fill="none" stroke="#7dd3f0" strokeWidth="1" strokeDasharray="3 5" opacity="0.7" className="pulse" />
+      <text x="324" y="212" fontSize="5.5" textAnchor="middle" fill="#6b7078" fontFamily="ui-monospace, monospace">
+        PORT A
+      </text>
+    </g>
+  );
+}
+
 /** The Ostriscan: a grain silo, a photocopier, and a round port for the head. */
 function Ostriscan({ id }: { id: string }) {
   return (
@@ -122,10 +141,22 @@ function Ostriscan({ id }: { id: string }) {
           <stop offset="1" stopColor="#0f1013" />
         </linearGradient>
       </defs>
-      {/* head port */}
-      <circle cx="342" cy="172" r="32" fill="#0f1013" stroke="#4a4d55" strokeWidth="3" />
-      <circle cx="342" cy="172" r="26" fill="#000" />
-      <circle cx="342" cy="172" r="32" fill="none" stroke="#f0b429" strokeWidth="1.5" strokeDasharray="4 6" className="pulse" />
+      {/* head port: a gasketed collar protruding from the cabinet */}
+      <defs>
+        <linearGradient id={`${id}-collar`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#4a4d55" />
+          <stop offset="0.5" stopColor="#2e3038" />
+          <stop offset="1" stopColor="#15161a" />
+        </linearGradient>
+        <radialGradient id={`${id}-aperture`} cx="55%" cy="50%" r="60%">
+          <stop offset="0" stopColor="#000000" />
+          <stop offset="0.7" stopColor="#07080a" />
+          <stop offset="1" stopColor="#1c1d22" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="306" cy="172" rx="13" ry="28" fill="#5a5d66" />
+      <ellipse cx="306" cy="172" rx="10" ry="24" fill={`url(#${id}-aperture)`} />
+      <ellipse cx="308" cy="172" rx="5" ry="16" fill="#7dd3f0" opacity="0.14" className="pulse" />
       {/* screen */}
       <rect x="366" y="240" width="98" height="150" rx="4" fill={`url(#${id}-screen)`} stroke="#3a3e48" strokeWidth="1" />
       <g fontFamily="ui-monospace, monospace" fill="#a0a4ae">
