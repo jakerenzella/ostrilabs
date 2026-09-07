@@ -46,6 +46,22 @@ export const disclosures: { n: number; text: string }[] = [
     n: 14,
     text: "Bushels are non-refundable. Seasons are defined by Ostrilabs and may be shortened without notice.",
   },
+  {
+    n: 15,
+    text: "The gantry was calibrated on an ostrich. Cows are asked to hold their heads higher and are marked down when they cannot.",
+  },
+  {
+    n: 16,
+    text: "All species receive the same capsule. Portion control is achieved by the size of the animal's mouth.",
+  },
+  {
+    n: 17,
+    text: "Elevated relative to the hen's own output on a day she did not lay. This is the standard comparison.",
+  },
+  {
+    n: 18,
+    text: "Collar data is written on a slip of paper by the sheep and carried to the long barn by pigeon. Hourly, weather permitting.",
+  },
 ];
 
 export const stats = [

@@ -15,6 +15,7 @@ export function Wordmark({ className = "" }: { className?: string }) {
 const links = [
   ["Compound", "#compound"],
   ["Protocol", "#protocol"],
+  ["The bay", "#bay"],
   ["Evidence", "#evidence"],
   ["Scientists", "#team"],
   ["Membership", "#membership"],
@@ -22,8 +23,8 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="relative z-20">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10" aria-label="Primary">
+    <header className="glass sticky top-0 z-40 border-b border-plumage-line/70 text-egg">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10" aria-label="Primary">
         <Wordmark className="text-egg" />
         <ul className="hidden items-center gap-8 text-[0.95rem] text-egg/80 md:flex">
           {links.map(([label, href]) => (

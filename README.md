@@ -17,5 +17,6 @@ Open http://localhost:3000.
 
 - `src/app/page.tsx` composes the page from the sections in `src/components/sections/`.
 - `src/lib/content.ts` holds all copy: disclosures, formulary, protocol steps, findings, testimonials, team, and pricing.
-- `src/components/ostrich/` is the illustration system. `parts.tsx` has the body, coat, neck, head, and props. `Ostrich.tsx` composes poses (tablet, clipboard, microscope, head in the Ostriscan). `Portrait.tsx` makes the circular team portraits.
+- `src/components/ostrich/` is the illustration system. `parts.tsx` has the ostrich body, coat, neck, head, and props. `Ostrich.tsx` composes poses (tablet, clipboard, microscope, head in the Ostriscan). `Portrait.tsx` makes the circular team portraits. `animals.tsx` draws the cow, pig, hen, and sheep, and `Scenes.tsx` places them in the scanning-bay scenes with the sweeping beam and holographic readouts.
+- `src/app/icon.svg` and `src/app/apple-icon.svg` are the egg favicon. `src/app/opengraph-image.png` is the social preview poster, rendered from the same illustration components.
 - `src/app/globals.css` defines the design tokens: plumage black, eggshell ivory, yolk accent, and the Bricolage Grotesque and Instrument Sans type scale.

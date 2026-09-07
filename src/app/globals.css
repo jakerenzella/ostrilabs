@@ -12,6 +12,8 @@
   --color-neck: #d9a093;
   --color-neck-deep: #b9766a;
   --color-slate: #6b7078;
+  --color-scan: #7dd3f0;
+  --color-scan-deep: #2aa7cf;
   --color-ink: #1c1d21;
   --color-paper: #fbfaf7;
 
@@ -170,6 +172,46 @@ sup.fn a:hover {
 }
 .scanline {
   animation: scan 3.2s linear infinite;
+}
+@keyframes sweep {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(var(--sweep, 280px));
+  }
+}
+.sweep {
+  transform-box: view-box;
+  animation: sweep 3s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+}
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.ticker {
+  animation: ticker 70s linear infinite;
+}
+.ticker:hover {
+  animation-play-state: paused;
+}
+@keyframes hover-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.hover-float {
+  animation: hover-float 4s ease-in-out infinite;
+}
+.glass {
+  background: color-mix(in srgb, var(--color-plumage) 72%, transparent);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
 }
 
 /* Reading measure */

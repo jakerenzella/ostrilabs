@@ -14,6 +14,7 @@ const instrument = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ostrilabs.farm"),
   title: "Ostrilabs — Every animal on the farm, optimised",
   description:
     "OSTRA-9 is a single daily compound, formulated by ostriches, that addresses 214 biomarkers at once. Full-body diagnostics for the whole farm.",

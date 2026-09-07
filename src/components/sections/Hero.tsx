@@ -92,10 +92,40 @@ function Specimen() {
               <stop offset="1" stopColor="#17181c" />
             </radialGradient>
           </defs>
+          <defs>
+            <linearGradient id="hero-beam" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stopColor="#7dd3f0" stopOpacity="0" />
+              <stop offset="0.75" stopColor="#7dd3f0" stopOpacity="0.16" />
+              <stop offset="1" stopColor="#7dd3f0" stopOpacity="0.7" />
+            </linearGradient>
+            <filter id="hero-glow" x="-20%" y="-300%" width="140%" height="700%">
+              <feGaussianBlur stdDeviation="3" />
+            </filter>
+            <clipPath id="hero-clip">
+              <rect x="150" y="40" width="360" height="580" />
+            </clipPath>
+          </defs>
           <rect width="640" height="640" fill="url(#hero-grid)" opacity="0.7" />
           <rect width="640" height="640" fill="url(#hero-vignette)" />
           <g transform="translate(80 0)">
             <OstrichFigure id="hero" pose="tablet" look="goggles" />
+          </g>
+          <g clipPath="url(#hero-clip)">
+            <g className="sweep" style={{ "--sweep": "540px" } as React.CSSProperties}>
+              <rect x="150" y="-10" width="360" height="56" fill="url(#hero-beam)" />
+              <rect x="150" y="44" width="360" height="4" fill="#7dd3f0" filter="url(#hero-glow)" opacity="0.9" />
+              <rect x="150" y="45" width="360" height="1.5" fill="#dff6ff" />
+            </g>
+          </g>
+          <g fill="none" stroke="#7dd3f0" strokeWidth="1.2" opacity="0.7">
+            <path d="M 150 60 V 40 H 170" />
+            <path d="M 490 40 H 510 V 60" />
+            <path d="M 150 600 V 620 H 170" />
+            <path d="M 490 620 H 510 V 600" />
+          </g>
+          <g fontFamily="ui-monospace, SFMono-Regular, Menlo, monospace" fontSize="9" fill="#7dd3f0" letterSpacing="0.8">
+            <text x="160" y="612">SPECIMEN 001</text>
+            <text x="500" y="612" textAnchor="end">214 / 214</text>
           </g>
           <g className="hidden md:block">
             {callouts.map((c, i) => {
@@ -162,10 +192,18 @@ function Specimen() {
 export function Hero() {
   return (
     <section className="on-dark relative overflow-hidden bg-plumage text-egg">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 pb-16 pt-6 lg:grid-cols-12 lg:gap-6 lg:px-10 lg:pb-24 lg:pt-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[42rem] opacity-70"
+        style={{
+          background:
+            "radial-gradient(60% 50% at 78% 30%, rgba(125,211,240,0.10), transparent 70%), radial-gradient(40% 40% at 20% 80%, rgba(240,180,41,0.06), transparent 70%)",
+        }}
+      />
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 pb-16 pt-12 lg:grid-cols-12 lg:gap-6 lg:px-10 lg:pb-24 lg:pt-16">
         <div className="lg:col-span-6">
-          <p className="rise rise-1 mb-6 inline-flex items-center gap-2 rounded-full border border-plumage-line px-3 py-1 text-[0.8rem] text-egg/75">
-            <span className="pulse h-1.5 w-1.5 rounded-full bg-yolk" />
+          <p className="rise rise-1 mb-6 inline-flex items-center gap-2 rounded-full border border-plumage-line bg-plumage-soft/60 px-3 py-1 text-[0.8rem] text-egg/75">
+            <span className="pulse h-1.5 w-1.5 rounded-full bg-scan" />
             Now enrolling cows, pigs, horses, hens, sheep, and one goat
           </p>
           <h1 className="rise rise-2 text-display-lg sm:text-display-xl">
