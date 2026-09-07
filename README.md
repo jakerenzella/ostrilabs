@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ostrilabs
 
-## Getting Started
+A satirical marketing site for Ostrilabs, a full-body diagnostics lab in the Animal Farm universe, run by scientific ostriches and selling OSTRA-9, a one-capsule cure-all. It parodies premium longevity clinics whose marketing runs ahead of their evidence.
 
-First, run the development server:
+Every numbered claim on the page links to the Disclosures section at the bottom, where the fine print does the honest work.
+
+## Run it
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where things live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/app/page.tsx` composes the page from the sections in `src/components/sections/`.
+- `src/lib/content.ts` holds all copy: disclosures, formulary, protocol steps, findings, testimonials, team, and pricing.
+- `src/components/ostrich/` is the illustration system. `parts.tsx` has the body, coat, neck, head, and props. `Ostrich.tsx` composes poses (tablet, clipboard, microscope, head in the Ostriscan). `Portrait.tsx` makes the circular team portraits.
+- `src/app/globals.css` defines the design tokens: plumage black, eggshell ivory, yolk accent, and the Bricolage Grotesque and Instrument Sans type scale.
