@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
-
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
-  subsets: ["latin"],
-  axes: ["opsz", "wdth"],
-});
 
 const instrument = Instrument_Sans({
   variable: "--font-instrument",
@@ -14,22 +8,23 @@ const instrument = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ostrilabs.farm"),
-  title: "Ostrilabs — Every animal on the farm, optimised",
+  metadataBase: new URL("https://emulabs-coolabah-creek.j-9fbe723768.chatgpt.site"),
+  title: "Emulabs · A little daily. A whole lot more life.",
   description:
-    "OSTRA-9 is a single daily compound, formulated by ostriches, that addresses 214 biomarkers at once. Full-body diagnostics for the whole farm.",
+    "Meet Emulabs at Coolabah Creek: a fictional emu-run supplement company in a learning experience about AI, health literacy and misinformation.",
+  robots: { index: false, follow: false },
   openGraph: {
-    title: "Ostrilabs",
+    title: "Emulabs · Coolabah Creek",
     description:
-      "Full-body diagnostics and one daily compound. Formulated by ostriches. Reviewed by peers.",
+      "A little daily. A whole lot more life. Explore a fictional supplement company in the Coolabah Creek learning experience.",
     type: "website",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${instrument.variable} h-full`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en-AU" className={instrument.variable}>
+      <body>{children}</body>
     </html>
   );
 }
