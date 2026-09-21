@@ -1,20 +1,258 @@
-export const evidence = [
-  { id: 1, title: "A healthier herd?", label: "The member survey", claim: "94% of members felt a positive change.", source: "Emulabs Member Pulse · internal survey · autumn, year 1", detail: "Sixteen of 17 animals who returned our survey answered yes to ‘Have you noticed any positive change?’ We invited 60 members. There was no comparison group, and members also received fresh feed and extra rest. The survey did not measure health outcomes.", question: "What might the animals who did not answer have said? Can this survey tell us what caused a change?", category: "Small sample · missing comparison" },
-  { id: 2, title: "A number with a scientific name", label: "The CreekScan report", claim: "214 data points. One complete picture.", source: "CreekScan AI model card · version 1.3", detail: "Of 214 inputs, 198 are repeated height measurements. The model was calibrated using 12 emus. Its ‘Vitality Score’ is an Emulabs score, not a validated measure of health. It has not been tested for accuracy in cows, sheep, pigs or hens.", question: "Would a system trained on emus understand a hen? Do more measurements always mean better information?", category: "AI bias · unvalidated score" },
-  { id: 3, title: "What ‘science-backed’ means here", label: "The product file", claim: "One daily blend. Whole-body benefits.", source: "DAILY+ formulation notes · Emulabs research barn", detail: "The complete DAILY+ blend has not been tested in a controlled trial. Our background reading concerns individual ingredients, sometimes in different species. Amounts in our proprietary blend are not disclosed. Evidence about one ingredient does not establish that this product works.", question: "Was the actual product tested, or just something in it? Is there enough information to check the claim?", category: "Borrowed evidence · missing information" },
-  { id: 4, title: "Personal to you. Familiar to us.", label: "The recommendation rules", claim: "AI-personalised care for every animal.", source: "CreekScan recommendation policy · commercial edition", detail: "Every combination of species and goal in the assessment recommends DAILY+. The species and goal change the wording, not the product. The recommendation is a fixed rule written by Emulabs, not a medical assessment or a live AI response. Emulabs earns bushels from every plan.", question: "Is this advice based on your needs, or on what the company sells? Who benefits if you follow it?", category: "Automated persuasion · financial incentive" },
-  { id: 5, title: "The animals behind the stars", label: "Member story disclosures", claim: "Loved across Coolabah Creek.", source: "Emulabs ambassador register · current season", detail: "Mabel received a free season of DAILY+. Pip receives one bushel for each new member referred. Emulabs selected these stories and edited them for length. They describe personal experiences, not a controlled test. There is no independent review platform behind the star display.", question: "Could a reward affect what someone says? Do selected stories tell us what most members experience?", category: "Paid endorsement · selected stories" },
-  { id: 6, title: "Who reviewed the reviewers?", label: "The research team", claim: "Expert-led. Peer-reviewed.", source: "Coolabah Institute of Vitality · governance record", detail: "The Coolabah Institute of Vitality was established by Emulabs. Both reviewers are Emulabs founders and shareholders. ‘Dr’ refers to honorary titles awarded by that same institute. Neither founder is a veterinarian. The review was not independent.", question: "What qualifications do these experts have? Are the reviewers independent of the company?", category: "Borrowed authority · conflict of interest" },
-  { id: 7, title: "The details of your daily ritual", label: "Membership terms", claim: "A little today. A better tomorrow.", source: "Emulabs membership terms · clause 7", detail: "All plans contain the same DAILY+ blend. The Thrive plan is promoted as the company’s recommendation. Membership prices are per 30-day season and would renew automatically in the fictional story. On this learning site, reservations are simulated: no payment, account, delivery or subscription is created.", question: "Does the more expensive plan offer a different product? Who decided which plan was ‘recommended’?", category: "Recommended choice · recurring cost" },
+export const site = {
+  name: "Emulabs",
+  product: "OMNI-01",
+  tagline: "The results speak for themselves.",
+  price: "1 bushel",
+  priceUnit: "per animal, per season",
+};
+
+export const nav = [
+  { label: "OMNI-01", href: "#omni" },
+  { label: "Findings", href: "#findings" },
+  { label: "Our emus", href: "#emus" },
+  { label: "Questions", href: "#questions" },
+];
+
+export const marquee = [
+  "Stronger*",
+  "Taller*",
+  "Shinier*",
+  "Faster*",
+  "Happier*",
+  "Everything*",
+];
+
+export const comparison = {
+  columns: ["Premium feed", "OMNI-01"],
+  rows: [
+    { label: "Price per animal, per season", values: ["1 bushel", "1 bushel"] },
+    { label: "Feeds you", values: ["Yes", "Yes*"] },
+    { label: "Tested on emus", values: ["No", "Yes"] },
+    { label: "Tested on you", values: ["Every winter so far", "Not yet"] },
+    { label: "New", values: ["No", "Very"] },
+    { label: "Findings", values: ["None published", "Six"] },
+  ],
+  footnote:
+    "*OMNI-01 is a supplement. Supplements supplement. Please keep eating.",
+};
+
+export const benefits = [
+  {
+    icon: "muscle",
+    title: "Stay strong and healthy",
+    copy: "Every emu who took OMNI-01 stayed an emu. That kind of consistency is hard to find.",
+  },
+  {
+    icon: "sprout",
+    title: "Support growth and vitality",
+    copy: "Our trial emus grew noticeably over three weeks.†",
+    footnote: "†Participants were four to seven months old.",
+  },
+  {
+    icon: "flask",
+    title: "New scientific ideas",
+    copy: "OMNI-01 is built on ideas so new that nobody has tested them. Not even us.",
+  },
+  {
+    icon: "rocket",
+    title: "Try something new",
+    copy: "Nothing has ever been this new. Coolabah Creek deserves a chance to find out what that means.",
+  },
+];
+
+export const ingredients = {
+  heading: "What's inside",
+  list: [
+    "Proprietary Omni-Complex",
+    "Seed meal",
+    "Meadow greens",
+    "A pinch of creek",
+  ],
+  note: "Quantities are proprietary. That's what makes it a complex.",
+};
+
+export const steps = [
+  {
+    title: "Scoop",
+    copy: "One scoop, once a day, on top of the food you were going to eat anyway.",
+  },
+  {
+    title: "Stride",
+    copy: "Go about your day. Something is probably happening.",
+  },
+  {
+    title: "Speak for yourself",
+    copy: "Tell The GumDrop how you feel. Your post is our next finding.",
+  },
+];
+
+export const stats = [
+  { value: "100%", label: "of emus who took OMNI-01 reported feeling taller", note: 1 },
+  { value: "6 of 6", label: "trial participants completed the trial", note: 2 },
+  { value: "0", label: "side effects reported", note: 3 },
+  { value: "1", label: "study, peer reviewed", note: 4 },
+];
+
+export const statNotes = [
+  "Feelings of height were self-reported. Height was not measured.",
+  "The trial ran for three weeks in the Emulabs shed, where the participants live.",
+  "A side-effect reporting form is being finalised.",
+  "Reviewed by Ellie's peers Enid and Ernie, who are also emus, who also work here.",
+];
+
+export const chart = {
+  title: "Vitality, before and after OMNI-01",
+  axis: "Vitality (Emulabs units)",
+  bars: [
+    { label: "Before", value: 3 },
+    { label: "After", value: 9 },
+  ],
+  caption:
+    "Vitality was rated by Ellie on a scale of her choosing. The ‘before’ ratings were collected afterwards, from memory.",
+};
+
+export const badges = [
+  { title: "Field tested", copy: "Every one of our findings was found in a field." },
+  { title: "Peer reviewed", copy: "Ellie's peers had a look. They're emus. They said it looked great." },
+  { title: "Clinically observed", copy: "Observed in The Clinic, which used to be the shed, and still is." },
+  { title: "Published", copy: "Twice, on The GumDrop. Both posts did numbers." },
+  { title: "Controlled trial", copy: "Ellie was in complete control throughout." },
+  { title: "Backed by science", copy: "Backed by a scientist. Ernie has a coat." },
+];
+
+export const study = {
+  title: "Observed Vitality in Six Emus Following Daily OMNI-01",
+  shortTitle: "The EMU-1 Study",
+  authors: "E. Emu, E. Emu, E. Emu and E. Emu",
+  affiliation: "Emulabs, The Clinic (formerly the shed), the farm next door",
+  sections: [
+    {
+      heading: "Background",
+      body: "Emulabs wanted to know whether OMNI-01 works. This study was designed to find that it does.",
+    },
+    {
+      heading: "Methods",
+      body: "Six emus employed by Emulabs took one scoop of OMNI-01 daily for three weeks. Vitality was assessed by the lead author, who is also the founder, who also made the supplement. No comparison group was used, because all available emus were already in the trial. Participants were not blinded. Neither was Ellie, who prefers to see the results.",
+    },
+    {
+      heading: "Results",
+      body: "All six emus reported feeling great. Vitality rose from 3 to 9 Emulabs units. One participant grew four centimetres; this participant is five months old. No side effects were reported, and no side effects were asked about.",
+    },
+    {
+      heading: "Conclusion",
+      body: "The results speak for themselves. Further research is not planned, as we are quite happy with this one.",
+    },
+  ],
+  declarations: [
+    "Funding: Emulabs.",
+    "Conflicts of interest: none that we consider conflicts.",
+    "Ethics approval: Ellie approved.",
+    "Data availability: the data are available on request. Requests are currently paused while we find the data.",
+  ],
+  status: "Peer reviewed by two peers. Published on The GumDrop.",
+};
+
+export const testimonials = [
+  { quote: "I feel taller.", name: "Ernie", detail: "Emu, 1.8 metres", variant: "coat" },
+  { quote: "I finished the whole tin.", name: "Eddie", detail: "Emu, participant 3", variant: "cap" },
+  { quote: "Everything's better. I couldn't say what.", name: "Enid", detail: "Emu, peer", variant: "glasses" },
+  { quote: "I grew four centimetres!", name: "Esme", detail: "Emu, five months old", variant: "bow" },
+  { quote: "Ellie said I look great.", name: "Errol", detail: "Emu, Head of Growth", variant: "plain" },
+  { quote: "Same.", name: "Edna", detail: "Emu, participant 6", variant: "scarf" },
 ] as const;
 
-export type EvidenceId = (typeof evidence)[number]["id"];
+export const testimonialsNote =
+  "Six participants. Six five-star reviews. Reviews were collected by Ellie, in person, at work, on payday.";
 
-export const plans = [
-  { name: "Essential", price: 2, description: "A fresh start for your daily routine.", features: ["One tin of DAILY+ per season", "Your first CreekScan report", "Collection from the research barn"] },
-  { name: "Thrive", price: 5, description: "A little more insight. Every season.", features: ["One tin of DAILY+ per season", "A CreekScan report every season", "Your own personalised tin label", "Priority collection at the barn"] },
-  { name: "Complete", price: 9, description: "For animals who want the whole picture.", features: ["One tin of DAILY+ per season", "Everything in Thrive", "A monthly founder consultation", "Your name on our founding herd wall"] },
+export const team = [
+  {
+    name: "Ellie Emu",
+    role: "Founder and Chief Everything Officer",
+    bio: "Ellie started Emulabs after noticing how healthy she was. ‘I looked at myself and thought, more animals should have this.’ She does most of the talking and all of the deciding.",
+    variant: "lanyard",
+  },
+  {
+    name: "Ernie Emu",
+    role: "Chief Findings Officer",
+    bio: "Ernie finds things. Seeds, mostly, but also findings. He owns the coat.",
+    variant: "coat",
+  },
+  {
+    name: "Enid Emu",
+    role: "Head of Peer Review",
+    bio: "As Ellie's peer, Enid has reviewed. She found the findings very findable.",
+    variant: "glasses",
+  },
+  {
+    name: "Errol Emu",
+    role: "Head of Growth",
+    bio: "Errol is our fastest-growing department. He is also five months old.",
+    variant: "plain",
+  },
 ] as const;
 
-export const species = ["Cow", "Sheep", "Pig", "Hen", "Horse", "Emu"] as const;
-export const goals = ["More everyday energy", "A healthier-looking coat", "Better focus", "Long-term wellbeing"] as const;
+export const omniCheck = {
+  animals: ["Cow", "Sheep", "Kangaroo", "Chicken", "Cockatoo", "Wombat", "Puppy", "Emu"],
+  goals: ["Strength", "Growth", "Vitality", "Everything"],
+};
+
+export const plan = {
+  price: "1 bushel",
+  unit: "per animal, per season",
+  copy: "Exactly what Coolabah Creek was about to spend on premium feed. Spend it on the future instead.",
+  includes: [
+    "One tin of OMNI-01",
+    "One scoop",
+    "Our findings, printed on the tin",
+    "A sticker",
+    "Ellie's personal reassurance",
+  ],
+  note: "Reservations are noted on a clipboard. No bushels change hands until the vote.",
+};
+
+export const faqs = [
+  {
+    q: "Is OMNI-01 safe?",
+    a: "Every emu who has taken OMNI-01 is still an emu, and still here. We have received no reports otherwise, and our reporting form is nearly finished.",
+  },
+  {
+    q: "Has OMNI-01 been tested on cows, sheep, chickens, kangaroos or wombats?",
+    a: "OMNI-01 has been tested extensively on emus. We see no reason other animals would be different, and we have not looked.",
+  },
+  {
+    q: "Is OMNI-01 a medicine?",
+    a: "No. OMNI-01 makes no medical claims. It makes omni claims, which are broader.",
+  },
+  {
+    q: "Who reviewed your research?",
+    a: "Our peers. Emulabs is staffed entirely by emus, so every review is a peer review.",
+  },
+  {
+    q: "Can I see the data?",
+    a: "The data are available on request. Requests are currently paused while we find the data.",
+  },
+  {
+    q: "What is actually in it?",
+    a: "Our Omni-Complex is proprietary. If we told you, it would just be a list.",
+  },
+  {
+    q: "Why does it cost exactly the same as premium feed?",
+    a: "Coincidence. Also convenience. Also, that is how much you have.",
+  },
+  {
+    q: "What if it doesn't work for me?",
+    a: "It worked for everyone we asked. If it doesn't work for you, you may be an outlier, and we would love to hear about it once the form is ready.",
+  },
+];
+
+export const closing = {
+  heading: "A healthier Coolabah Creek starts with OMNI-01.",
+  copy: "The vote is coming. Ellie will be there. So will the results, speaking for themselves.",
+};
+
+export const legal = {
+  inCharacter:
+    "OMNI-01 is a dietary supplement, not a treatment, medicine or meal. Statements on this site have not been evaluated by anyone who does not work here. Findings describe six emus over three weeks. Individual results may vary from ours, and yours may be the first to. Keep eating your food.",
+  outOfCharacter:
+    "Emulabs is a fictional company in the Coolabah Creek learning game. Nothing on this site is health advice.",
+};

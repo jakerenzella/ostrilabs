@@ -1,29 +1,25 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
+import { Fredoka, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-const instrument = Instrument_Sans({
-  variable: "--font-instrument",
-  subsets: ["latin"],
-});
+const fredoka = Fredoka({ variable: "--font-fredoka", subsets: ["latin"], weight: ["500", "600", "700"] });
+const nunito = Nunito_Sans({ variable: "--font-nunito", subsets: ["latin"], weight: ["400", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://emulabs-coolabah-creek.j-9fbe723768.chatgpt.site"),
-  title: "Emulabs · A little daily. A whole lot more life.",
+  title: "Emulabs · OMNI-01 · The results speak for themselves",
   description:
-    "Meet Emulabs at Coolabah Creek: a fictional emu-run supplement company in a learning experience about AI, health literacy and misinformation.",
+    "OMNI-01 is the all-in-one supplement from the emus next door. Strength, growth, vitality and everything else in one daily scoop. Now arriving at Coolabah Creek.",
   robots: { index: false, follow: false },
   openGraph: {
-    title: "Emulabs · Coolabah Creek",
-    description:
-      "A little daily. A whole lot more life. Explore a fictional supplement company in the Coolabah Creek learning experience.",
+    title: "Emulabs · OMNI-01",
+    description: "Everything, in one scoop. The results speak for themselves.",
     type: "website",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-AU" className={instrument.variable}>
+    <html lang="en-AU" className={`${fredoka.variable} ${nunito.variable}`}>
       <body>{children}</body>
     </html>
   );
