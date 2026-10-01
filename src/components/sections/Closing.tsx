@@ -9,11 +9,11 @@ export function Closing() {
           <h2 className="text-4xl md:text-6xl text-wattle">{closing.heading}</h2>
           <p className="mt-5 text-lg md:text-xl max-w-xl text-butter/85">{closing.copy}</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="#reserve" className="btn btn-sun">Reserve OMNI-01</a>
+            <a href="#reserve" className="btn btn-sun">Get SuperHealth</a>
             <a href="#findings" className="btn btn-wattle">Read the findings again</a>
           </div>
         </div>
-        <Ellie className="w-56 md:w-72 -mb-16 md:-mb-24 drop-shadow-[6px_6px_0_#ffd23f]" />
+        <Ellie className="w-56 md:w-72 -mb-16 md:-mb-24" />
       </div>
     </section>
   );

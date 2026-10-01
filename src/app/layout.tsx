@@ -6,13 +6,13 @@ const fredoka = Fredoka({ variable: "--font-fredoka", subsets: ["latin"], weight
 const nunito = Nunito_Sans({ variable: "--font-nunito", subsets: ["latin"], weight: ["400", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  title: "Emulabs · OMNI-01 · The results speak for themselves",
+  title: "EmuLabs SuperHealth · The results speak for themselves",
   description:
-    "OMNI-01 is the all-in-one supplement from the emus next door. Strength, growth, vitality and everything else in one daily scoop. Now arriving at Coolabah Creek.",
+    "EmuLabs SuperHealth daily supplement tablets. Strength, growth, vitality and everything else from the emus next door. Now arriving at Coolabah Creek.",
   robots: { index: false, follow: false },
   openGraph: {
-    title: "Emulabs · OMNI-01",
-    description: "Everything, in one scoop. The results speak for themselves.",
+    title: "EmuLabs SuperHealth",
+    description: "Little tablets. Big promises. The results speak for themselves.",
     type: "website",
   },
 };

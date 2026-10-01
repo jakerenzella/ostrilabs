@@ -1,5 +1,5 @@
 import { benefits, ingredients } from "@/lib/content";
-import { Tin } from "@/components/illustrations/Tin";
+import { TabletBottle } from "@/components/illustrations/TabletBottle";
 import { Wave } from "@/components/illustrations/Wave";
 import { MuscleIcon, SproutIcon, FlaskIcon, RocketIcon } from "@/components/illustrations/Icons";
 
@@ -8,18 +8,18 @@ const icons = { muscle: MuscleIcon, sprout: SproutIcon, flask: FlaskIcon, rocket
 export function Product() {
   const footnotes = benefits.filter((b) => b.footnote);
   return (
-    <section id="omni" className="bg-butter">
+    <section id="superhealth" className="bg-butter">
       <Wave color="#d3e7ef" flip />
       <div className="wrap py-12 md:py-20">
         <div className="grid gap-10 lg:grid-cols-[auto_1fr] items-center">
           <div className="relative mx-auto">
             <div className="absolute inset-4 rounded-full bg-wattle border-[3px] border-egg" aria-hidden="true" />
-            <Tin className="relative w-64 md:w-80 drop-shadow-[8px_8px_0_#1f4a3f]" />
+            <TabletBottle className="relative w-64 md:w-80 drop-shadow-[8px_8px_0_#1f4a3f]" />
           </div>
           <div>
-            <h2 className="text-4xl md:text-5xl">One scoop. Omni benefits.</h2>
+            <h2 className="text-4xl md:text-5xl">Little tablets. Big promises.</h2>
             <p className="mt-5 text-lg leading-relaxed max-w-xl">
-              Omni means everything, which is what we’re going for. OMNI-01 is designed to support vitality, improve performance and help animals stay in better condition throughout the season. Designed to, and we designed it.
+              EmuLabs SuperHealth puts our big ideas into daily tablets. Designed to support vitality, improve performance and help animals stay in better condition throughout the season. Designed to, and we designed it.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-4">
               {benefits.map((b) => {

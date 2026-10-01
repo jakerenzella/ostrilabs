@@ -11,12 +11,12 @@ export function Footer() {
         </div>
         <nav aria-label="Footer" className="flex flex-wrap gap-x-6 gap-y-2 font-display font-semibold text-lg md:justify-end md:self-start">
           {nav.map((item) => <a key={item.href} href={item.href} className="hover:text-sun">{item.label}</a>)}
-          <a href="#reserve" className="hover:text-sun">Reserve</a>
+          <a href="#reserve" className="hover:text-sun">Get SuperHealth</a>
         </nav>
         <div className="md:col-span-2 border-t-2 border-egg/20 pt-6">
           <p className="fineprint max-w-3xl">{legal.inCharacter}</p>
           <p className="fineprint mt-3 max-w-3xl opacity-70">{legal.outOfCharacter}</p>
-          <p className="fineprint mt-3">© {new Date().getFullYear()} Emulabs. Findings printed on the tin.</p>
+          <p className="fineprint mt-3">© {new Date().getFullYear()} EmuLabs. Findings printed on the label.</p>
         </div>
       </div>
     </footer>

@@ -1,13 +1,13 @@
 import { steps } from "@/lib/content";
-import { ScoopIcon, StrideIcon, SpeakIcon } from "@/components/illustrations/Icons";
+import { TabletIcon, StrideIcon, SpeakIcon } from "@/components/illustrations/Icons";
 
-const icons = [ScoopIcon, StrideIcon, SpeakIcon];
+const icons = [TabletIcon, StrideIcon, SpeakIcon];
 
 export function HowItWorks() {
   return (
     <section className="bg-wattle border-y-[3px] border-egg">
       <div className="wrap py-12 md:py-20">
-        <h2 className="text-4xl md:text-5xl">How OMNI-01 works</h2>
+        <h2 className="text-4xl md:text-5xl">How SuperHealth works</h2>
         <p className="mt-4 text-lg max-w-xl">Three steps. The third one is the important one.</p>
         <ol className="mt-10 grid md:grid-cols-3 gap-6">
           {steps.map((step, i) => {

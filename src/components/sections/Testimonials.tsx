@@ -9,7 +9,7 @@ export function Testimonials() {
       <Wave color="#fff6df" flip />
       <div className="wrap py-12 md:py-20">
         <h2 className="text-4xl md:text-5xl">The results, speaking for themselves.</h2>
-        <p className="mt-4 text-lg max-w-xl text-butter/85">Every animal who took OMNI-01 had something to say. Here is all of it.</p>
+        <p className="mt-4 text-lg max-w-xl text-butter/85">Every animal who took SuperHealth had something to say. Here is all of it.</p>
         <ul className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <li key={t.name} className="card p-6 text-egg" style={{ transform: `rotate(${(i % 3) - 1}deg)` }}>

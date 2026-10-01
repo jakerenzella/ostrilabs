@@ -1,6 +1,6 @@
 import { plan } from "@/lib/content";
 import { ReserveDialog } from "@/components/ReserveDialog";
-import { Tin } from "@/components/illustrations/Tin";
+import { TabletBottle } from "@/components/illustrations/TabletBottle";
 import { Sticker } from "@/components/illustrations/Sticker";
 
 export function Pricing() {
@@ -8,16 +8,16 @@ export function Pricing() {
     <section id="reserve" className="bg-butter">
       <div className="wrap py-14 md:py-24 grid gap-10 lg:grid-cols-[1fr_1fr] items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl">Same price as premium feed. Infinitely more omni.</h2>
+          <h2 className="text-4xl md:text-5xl">Same price as premium feed. Considerably more super.</h2>
           <p className="mt-5 text-lg leading-relaxed max-w-lg">{plan.copy}</p>
-          <p className="mt-4 text-lg leading-relaxed max-w-lg">The vote is only days away. Reserve now, and OMNI-01 will be ready the moment Coolabah Creek chooses the future.</p>
+          <p className="mt-4 text-lg leading-relaxed max-w-lg">The vote is only days away. Reserve now, and SuperHealth will be ready the moment Coolabah Creek chooses the future.</p>
         </div>
         <div className="card p-6 md:p-8 relative bg-cream">
           <div className="absolute -top-8 -right-3 md:-right-8">
             <Sticker color="#ff7a3d" tilt={8}>Same price!</Sticker>
           </div>
           <div className="flex items-end gap-4">
-            <Tin className="w-24 md:w-28" scoop={false} />
+            <TabletBottle className="w-24 md:w-28 shrink-0" />
             <div>
               <p className="font-display font-bold text-5xl md:text-6xl leading-none">{plan.price}</p>
               <p className="font-display font-semibold text-lg mt-1">{plan.unit}</p>

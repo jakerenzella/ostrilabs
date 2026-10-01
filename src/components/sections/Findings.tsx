@@ -11,7 +11,7 @@ export function Findings() {
           <div>
             <h2 className="text-4xl md:text-6xl">Our findings. We found every one ourselves.</h2>
             <p className="mt-5 text-lg leading-relaxed max-w-2xl">
-              At Emulabs, research means going out and finding things. We looked hard, mostly at the ground, and here is what we found.
+              At EmuLabs, research means going out and finding things. We looked hard, mostly at the ground, and here is what we found.
             </p>
           </div>
           <Portrait variant="coat" label="Ernie Emu in his lab coat" className="w-32 md:w-40 hidden sm:block" />
