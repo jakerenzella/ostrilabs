@@ -1,21 +1,12 @@
+import Image from "next/image";
 import { Dumbbell, Sprout, FlaskConical, Rocket, Pill, Footprints, MessageSquareText, Plus, X } from "lucide-react";
 
 type IconProps = { className?: string };
 const lucide = { strokeWidth: 2.25, absoluteStrokeWidth: false } as const;
 
-/** Emu head logo mark. */
+/* Site mark: the EmuLabs icon, served from app/icon.svg so the favicon and the mark stay in sync. */
 export function Mark({ className = "" }: IconProps) {
-  return (
-    <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
-      <circle cx="24" cy="24" r="22" fill="#1f4a3f" />
-      <path d="M17 32 L17 22" stroke="#86b7cb" strokeWidth="8" strokeLinecap="round" />
-      <circle cx="19" cy="17" r="8" fill="#86b7cb" />
-      <path d="M12 15 C13 9 20 8 25 12 C21 12 17 13 15 17 Z" fill="#3e2e23" />
-      <path d="M12 18 L4 20 L12 22 Z" fill="#fff6df" />
-      <circle cx="20" cy="17" r="2.6" fill="#1f4a3f" />
-      <path d="M22 34 C24 28 34 26 40 30 C36 36 28 38 22 34 Z" fill="#5b4636" />
-    </svg>
-  );
+  return <Image src="/icon.svg" alt="" aria-hidden="true" width={48} height={48} unoptimized className={`rounded-lg ${className}`} />;
 }
 
 /* Benefit and step icons come from Lucide so they read cleanly at any size. */

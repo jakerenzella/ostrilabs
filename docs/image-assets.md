@@ -13,5 +13,5 @@ The product is always shown and described as tablets. Use **EmuLabs** in regular
 - `Ellie.tsx`: the founder, used in the hero and closing section.
 - `Portrait.tsx`: emu portraits with accessories for team members and study participants.
 - `Scene.tsx`: rolling hills, gum trees and the creek.
-- `Sticker.tsx`, `Wave.tsx` and `Icons.tsx`: supporting decoration and icons.
+- `Sticker.tsx`, `Wave.tsx` and `Icons.tsx`: supporting decoration and icons. `Mark` renders the site icon from `src/app/icon.svg`, which is also the favicon.
 - `Chart.tsx`: the fictional study’s vitality chart.
