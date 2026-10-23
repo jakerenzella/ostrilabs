@@ -17,9 +17,9 @@ export function Product() {
             <TabletBottle className="relative w-64 md:w-80 drop-shadow-[8px_8px_0_#1f4a3f]" />
           </div>
           <div>
-            <h2 className="text-4xl md:text-5xl">Little tablets. Big promises.</h2>
+            <h2 className="text-4xl md:text-5xl">Little capsules. Big promises.</h2>
             <p className="mt-5 text-lg leading-relaxed max-w-xl">
-              EmuLabs SuperHealth puts our big ideas into daily tablets. Designed to support vitality, improve performance and help animals stay in better condition throughout the season. Designed to, and we designed it.
+              EmuLabs SuperHealth puts our big ideas into daily capsules. Designed to support vitality, improve performance and help animals stay in better condition throughout the season. Designed to, and we designed it.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-4">
               {benefits.map((b) => {

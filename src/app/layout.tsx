@@ -8,11 +8,11 @@ const nunito = Nunito_Sans({ variable: "--font-nunito", subsets: ["latin"], weig
 export const metadata: Metadata = {
   title: "EmuLabs SuperHealth · The results speak for themselves",
   description:
-    "EmuLabs SuperHealth daily supplement tablets. Strength, growth, vitality and everything else from the emus next door. Now arriving at Coolabah Creek.",
+    "EmuLabs SuperHealth daily supplement capsules. Strength, growth, vitality and everything else from the emus next door. Now arriving at Coolabah Creek.",
   robots: { index: false, follow: false },
   openGraph: {
     title: "EmuLabs SuperHealth",
-    description: "Little tablets. Big promises. The results speak for themselves.",
+    description: "Little capsules. Big promises. The results speak for themselves.",
     type: "website",
   },
 };

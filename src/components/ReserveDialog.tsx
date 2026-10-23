@@ -22,7 +22,7 @@ export function ReserveDialog({ className = "btn btn-sun" }: { className?: strin
           <div>
             <div className="flex gap-1" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <StarIcon key={i} className="size-7" />)}</div>
             <p className="mt-3 text-lg">
-              Thanks, {done.name}. {done.bottles} {done.bottles === "1" ? "bottle" : "bottles"} of SuperHealth tablets will be waiting for you after the vote. The results will speak for themselves, and so will Ellie.
+              Thanks, {done.name}. {done.bottles} {done.bottles === "1" ? "bottle" : "bottles"} of SuperHealth capsules will be waiting for you after the vote. The results will speak for themselves, and so will Ellie.
             </p>
             <p className="fineprint mt-4">{plan.note} Nothing has been paid, posted or promised, apart from the results.</p>
             <button type="button" className="btn btn-sun mt-5" onClick={close}>Back to the creek</button>

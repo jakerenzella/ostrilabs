@@ -73,8 +73,8 @@ export const ingredients = {
 
 export const steps = [
   {
-    title: "Take your tablets",
-    copy: "Make SuperHealth tablets part of your daily routine. Keep eating the food you were going to eat anyway.",
+    title: "Take your capsules",
+    copy: "Make SuperHealth capsules part of your daily routine. Keep eating the food you were going to eat anyway.",
   },
   {
     title: "Stride",
@@ -132,7 +132,7 @@ export const study = {
     },
     {
       heading: "Methods",
-      body: "Six emus employed by EmuLabs took SuperHealth tablets daily for three weeks. Vitality was assessed by the lead author, who is also the founder, who also made the supplement. No comparison group was used, because all available emus were already in the trial. Participants were not blinded. Neither was Ellie, who prefers to see the results.",
+      body: "Six emus employed by EmuLabs took SuperHealth capsules daily for three weeks. Vitality was assessed by the lead author, who is also the founder, who also made the supplement. No comparison group was used, because all available emus were already in the trial. Participants were not blinded. Neither was Ellie, who prefers to see the results.",
     },
     {
       heading: "Results",
@@ -154,7 +154,7 @@ export const study = {
 
 export const testimonials = [
   { quote: "I feel taller.", name: "Ernie", detail: "Emu, 1.8 metres", variant: "coat" },
-  { quote: "I remembered my tablets every day.", name: "Eddie", detail: "Emu, participant 3", variant: "cap" },
+  { quote: "I remembered my capsules every day.", name: "Eddie", detail: "Emu, participant 3", variant: "cap" },
   { quote: "Everything's better. I couldn't say what.", name: "Enid", detail: "Emu, peer", variant: "glasses" },
   { quote: "I grew four centimetres!", name: "Esme", detail: "Emu, five months old", variant: "bow" },
   { quote: "Ellie said I look great.", name: "Errol", detail: "Emu, Head of Growth", variant: "plain" },
@@ -201,7 +201,7 @@ export const plan = {
   unit: "per animal, per season",
   copy: "Exactly what Coolabah Creek was about to spend on quality feed. Spend it on the future instead.",
   includes: [
-    "One bottle of SuperHealth tablets",
+    "One bottle of SuperHealth capsules",
     "Our findings, printed on the label",
     "A sticker",
     "Ellie's personal reassurance",
@@ -212,7 +212,7 @@ export const plan = {
 export const faqs = [
   {
     q: "What form does SuperHealth come in?",
-    a: "SuperHealth comes as tablets in a bottle. A small addition to your daily routine, with some very big promises on the label.",
+    a: "SuperHealth comes as capsules in a bottle. A small addition to your daily routine, with some very big promises on the label.",
   },
   {
     q: "Is SuperHealth safe?",
@@ -224,7 +224,7 @@ export const faqs = [
   },
   {
     q: "Is SuperHealth a medicine?",
-    a: "No. SuperHealth is a tablet supplement. The ‘super’ is part of the name. Ellie considers that distinction very important.",
+    a: "No. SuperHealth is a capsule supplement. The ‘super’ is part of the name. Ellie considers that distinction very important.",
   },
   {
     q: "Who reviewed your research?",
@@ -255,7 +255,7 @@ export const closing = {
 
 export const legal = {
   inCharacter:
-    "SuperHealth tablets are a dietary supplement, not a treatment, medicine or meal. Statements on this site have not been evaluated by anyone who does not work here. Findings describe six emus over three weeks. Individual results may vary from ours, and yours may be the first to. Keep eating your food.",
+    "SuperHealth capsules are a dietary supplement, not a treatment, medicine or meal. Statements on this site have not been evaluated by anyone who does not work here. Findings describe six emus over three weeks. Individual results may vary from ours, and yours may be the first to. Keep eating your food.",
   outOfCharacter:
     "EmuLabs is a fictional company in the Coolabah Creek learning game. Nothing on this site is health advice.",
 };

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Dumbbell, Sprout, FlaskConical, Rocket, Pill, Footprints, MessageSquareText, Plus, X } from "lucide-react";
+import { Dumbbell, Sprout, FlaskConical, Rocket, Footprints, MessageSquareText, Plus, X } from "lucide-react";
 
 type IconProps = { className?: string };
 const lucide = { strokeWidth: 2.25, absoluteStrokeWidth: false } as const;
@@ -14,11 +14,24 @@ export const MuscleIcon = ({ className = "" }: IconProps) => <Dumbbell className
 export const SproutIcon = ({ className = "" }: IconProps) => <Sprout className={className} {...lucide} aria-hidden="true" />;
 export const FlaskIcon = ({ className = "" }: IconProps) => <FlaskConical className={className} {...lucide} aria-hidden="true" />;
 export const RocketIcon = ({ className = "" }: IconProps) => <Rocket className={className} {...lucide} aria-hidden="true" />;
-export const TabletIcon = ({ className = "" }: IconProps) => <Pill className={className} {...lucide} aria-hidden="true" />;
 export const StrideIcon = ({ className = "" }: IconProps) => <Footprints className={className} {...lucide} aria-hidden="true" />;
 export const SpeakIcon = ({ className = "" }: IconProps) => <MessageSquareText className={className} {...lucide} aria-hidden="true" />;
 export const PlusIcon = ({ className = "" }: IconProps) => <Plus className={className} strokeWidth={2.5} aria-hidden="true" />;
 export const CloseIcon = ({ className = "" }: IconProps) => <X className={className} strokeWidth={2.5} aria-hidden="true" />;
+
+/* SuperHealth capsule: elongated, half red and half white, matching the capsules on the bottle illustration. */
+export function TabletIcon({ className = "" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <g transform="rotate(-40 12 12)" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round">
+        <rect x="2" y="7.5" width="20" height="9" rx="4.5" fill="#ee3534" stroke="none" />
+        <path d="M12 7.5 H17.5 A4.5 4.5 0 0 1 17.5 16.5 H12 Z" fill="#fffdf7" stroke="none" />
+        <rect x="2" y="7.5" width="20" height="9" rx="4.5" fill="none" />
+        <path d="M12 7.5 V16.5" fill="none" />
+      </g>
+    </svg>
+  );
+}
 
 export function EggIcon({ className = "" }: IconProps) {
   return (
