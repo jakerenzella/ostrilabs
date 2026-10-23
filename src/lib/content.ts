@@ -23,7 +23,7 @@ export const marquee = [
 ];
 
 export const comparison = {
-  columns: ["Premium feed", "SuperHealth"],
+  columns: ["quality feed", "SuperHealth"],
   rows: [
     { label: "Price per animal, per season", values: ["1 bushel", "1 bushel"] },
     { label: "Feeds you", values: ["Yes", "Yes*"] },
@@ -199,7 +199,7 @@ export const superHealthCheck = {
 export const plan = {
   price: "1 bushel",
   unit: "per animal, per season",
-  copy: "Exactly what Coolabah Creek was about to spend on premium feed. Spend it on the future instead.",
+  copy: "Exactly what Coolabah Creek was about to spend on quality feed. Spend it on the future instead.",
   includes: [
     "One bottle of SuperHealth tablets",
     "Our findings, printed on the label",
@@ -239,7 +239,7 @@ export const faqs = [
     a: "Our SuperHealth Complex is proprietary. If we told you, it would just be a list.",
   },
   {
-    q: "Why does it cost exactly the same as premium feed?",
+    q: "Why does it cost exactly the same as quality feed?",
     a: "Coincidence. Also convenience. Also, that is how much you have.",
   },
   {

@@ -16,7 +16,7 @@ export function Hero() {
             The results speak for themselves.<a href="#hero-note" className="fn" aria-label="Footnote">*</a>
           </h1>
           <p className="mt-6 max-w-xl text-lg md:text-xl leading-relaxed">
-            Meet SuperHealth, the daily supplement tablets from the emus next door. Strength, growth, vitality and everything else, in tablet form. Same price as premium feed. Considerably more super. Now arriving at Coolabah Creek.
+            Meet SuperHealth, the daily supplement tablets from the emus next door. Strength, growth, vitality and everything else, in tablet form. Same price as quality feed. Considerably more super. Now arriving at Coolabah Creek.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="#reserve" className="btn btn-sun">Get SuperHealth</a>

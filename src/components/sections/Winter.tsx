@@ -9,7 +9,7 @@ export function Winter() {
         <div>
           <h2 className="text-4xl md:text-5xl">Last winter was hard. This one doesn’t have to be.</h2>
           <p className="mt-6 text-lg leading-relaxed max-w-lg">
-            Food ran low. Sickness spread. Coolabah Creek was planning to spend its bushels on premium feed again. Feed is fine. Feed is what you did last year.
+            Food ran low. Sickness spread. Coolabah Creek was planning to spend its bushels on quality feed again. Feed is fine. Feed is what you did last year.
           </p>
           <p className="mt-4 text-lg leading-relaxed max-w-lg">
             SuperHealth costs exactly the same. It just does considerably more, according to everyone who has taken it.
@@ -18,7 +18,7 @@ export function Winter() {
         <div className="card overflow-hidden">
           <div className="overflow-x-auto">
           <table className="w-full text-left">
-            <caption className="sr-only">Premium feed compared with SuperHealth</caption>
+            <caption className="sr-only">quality feed compared with SuperHealth</caption>
             <thead className="bg-egg text-butter font-display text-lg">
               <tr>
                 <th scope="col" className="px-4 py-3 font-semibold">Compare</th>

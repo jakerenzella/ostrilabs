@@ -8,7 +8,7 @@ export function Pricing() {
     <section id="reserve" className="bg-butter">
       <div className="wrap py-14 md:py-24 grid gap-10 lg:grid-cols-[1fr_1fr] items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl">Same price as premium feed. Considerably more super.</h2>
+          <h2 className="text-4xl md:text-5xl">Same price as quality feed. Considerably more super.</h2>
           <p className="mt-5 text-lg leading-relaxed max-w-lg">{plan.copy}</p>
           <p className="mt-4 text-lg leading-relaxed max-w-lg">The vote is only days away. Reserve now, and SuperHealth will be ready the moment Coolabah Creek chooses the future.</p>
         </div>
